@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import (
     QLineEdit, QPushButton, QDoubleSpinBox, QSpinBox
 )
 from PyQt5.QtCore import Qt
+from qt_material import apply_stylesheet
 
 
 class BillRow(QWidget):
@@ -94,6 +95,7 @@ class TipCalculator(QWidget):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    apply_stylesheet(app, theme='dark_cyan.xml')
     window = TipCalculator()
     window.show()
     sys.exit(app.exec_())
