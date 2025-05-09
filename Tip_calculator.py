@@ -4,6 +4,9 @@ from PyQt5.QtWidgets import (
     QLineEdit, QPushButton, QDoubleSpinBox, QSpinBox
 )
 from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QFontDatabase
+
+import qt_material_resources_rc
 from qt_material import apply_stylesheet
 
 
@@ -95,7 +98,9 @@ class TipCalculator(QWidget):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    apply_stylesheet(app, theme='dark_cyan.xml')
+    font_db = QFontDatabase()
+    app.setFont(font_db.systemFont(QFontDatabase.GeneralFont))
+    apply_stylesheet(app, theme='light_blue.xml')
     window = TipCalculator()
     window.show()
     sys.exit(app.exec_())

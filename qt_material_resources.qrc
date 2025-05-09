@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="icon:/active">
+    <file>my_resources/icons/uparrow.svg</file>
+    <file>my_resources/icons/downarrow.svg</file>
+    <file>my_resources/icons/leftarrow.svg</file>
+    <file>my_resources/icons/rightarrow.svg</file>
+  </qresource>
+</RCC>
